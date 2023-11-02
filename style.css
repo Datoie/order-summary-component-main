@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:0 -10vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    border-radius: 10px ;
+    max-width: 500px;
+}
+section{
+    padding: 40px 20px 15px;
+}
+/* section   typgraphy*/
+h1{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: hsl(224, 23%, 40%);
+}
+p{
+    max-width: 350px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.music-container{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.img-text-container{
+    display: flex;
+}
+.img-text-container img{
+    margin-right: 20px;
+}
+/* typograhphy */
+.img-text-container h2 {
+    font-weight: 900;
+    color: hsl(224, 23%, 40%);
+    line-height: 25px;
+}
+/* buttton  1*/
+.music-container button {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration:underline;
+    color: hsl(245, 75%, 52%, .8);
+    font-weight: 700;
+}
+/* button 2 */
+.bottom-contiaer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.bottom-btn{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 94%);
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 10px 0 ;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: rgb(46, 46, 161, .4) 0px 10px 29px 0px;
+    font-weight: 700;
+}
+.bottom-btn-1{
+    background: 0;
+    border: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* responive */
+@media only screen and (max-width: 750PX) {
+    body {
+      background-size: 50%;
+    }
+  }

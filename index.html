@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="img-container">
+      <img src="images/illustration-hero.svg" alt="mian img">
+    </div>  
+    <section>
+      <h1>Order Summary</h1>
+      <p> You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+        <div class="music-container">
+          <div class="img-text-container">
+            <img src="images/icon-music.svg" alt="icon of musc">
+            <div class="music-row-contianer">
+              <h2>Annual Plan</h2>
+              <span>$59.99/year</span>
+            </div>
+          </div>
+          <form style="position: relative;">
+            <button>Change</button>
+            <select name="musc-list" id="musicList" style="position: absolute; left: 0;top: 20px;" hidden>
+              <option value="Slena Gomes">Slena Gomes: bla bal</option>
+              <option value="Eminem">Eminem: Not afraid</option>
+              <option value="Coldplay">Coldplay: Praidase</option>
+            </select>
+          </form>
+        </div>
+        <form class="bottom-contiaer">
+          <input type="submit" value='Proceed to Payment' id="paymentProceed" class="bottom-btn">
+          <input type="submit" value='Cancel Order' id="paymentCacel" class="bottom-btn-1">
+        </form>
+    </section>
+  </main>
+</body>
+</html>
