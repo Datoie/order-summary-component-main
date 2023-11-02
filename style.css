@@ -27,6 +27,7 @@ main{
     overflow: hidden;
     border-radius: 10px ;
     max-width: 500px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
 }
 section{
     padding: 40px 20px 15px;
